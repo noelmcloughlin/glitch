@@ -1,0 +1,88 @@
+<!-- This is a static file -->
+<!-- served from your routes in server.js -->
+
+<!-- You might want to try something fancier: -->
+<!-- html/nunjucks docs: https://mozilla.github.io/nunjucks/ -->
+<!-- pug: https://pugjs.org/ -->
+<!-- haml: http://haml.info/ -->
+<!-- hbs(handlebars): http://handlebarsjs.com/ -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Welcome to Glitch!</title>
+    <meta name="description" content="A cool thing made with Glitch">
+    <link id="favicon" rel="icon" href="https://glitch.com/edit/favicon-app.ico" type="image/x-icon">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css">
+    
+    <!-- import the webpage's client-side javascript file -->
+    <script src="/client.js" defer></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.1/semantic.min.css" type="text/css">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.1/semantic.min.js"></script>
+  </head>
+  <body>
+    <section class="ui container">
+      <section class="ui segment">
+
+        <section class="ui left aligned doubling one column stackable grid container">
+          <div class="column">
+            <div class="ui inline cookie nag">
+              <span class="title">
+                We use cookies to ensure you get the best experience on our website
+              </span>
+                <i class="close icon"></i>
+                <script>
+                    // Wont re-appear unless cleared
+                    $('.cookie.nag')
+                        .nag('show');
+                </script>
+              </div>
+            </div>
+        </section>
+
+        <section class="ui raised segment">
+          <header class="ui huge header center aligned blue">A dream of the future</header>
+        </section>
+
+        <section class="ui left aligned doubling four column stackable grid segment">
+          <column class="ui column">
+            <p class="bold">howdy</p>
+            <p>Tell me your plans for the weekend:</p>
+
+            <form class="ui form">
+              <input name="dream" type="text" maxlength="100" placeholder="Dreams!" aria-labelledby="submit-dream">
+              <button type="submit" id="submit-dream">Submit Dream</button>
+            </form>
+            <section class="dreams">
+              <ul id="dreams"></ul>
+            </section>
+          </column>
+          <column class="ui column">
+          </column>
+          <column class="ui left aligned column">
+            <img class="ui very large image" src="https://cdn.glitch.com/2b88abd1-75a3-443d-abeb-3b864ecad1d6%2Fhomer.png?1535491546176">
+          </column>
+          <column class="ui column">
+          </column>
+        </section>
+        
+      <footer>
+        Made with <a href="https://glitch.com">Glitch</a>!
+      </footer>
+
+      <!-- include the Glitch button to show what the webpage is about and
+            to make it easier for folks to view source and remix -->
+      <div class="glitchButton" style="position:fixed;top:20px;right:20px;"></div>
+      <script src="https://button.glitch.me/button.js"></script>
+        
+      </section>
+    </section>
+
+  </body>
+</html>
